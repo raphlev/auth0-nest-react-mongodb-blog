@@ -82,7 +82,8 @@ AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
 AUTH0_AUDIENCE=http://localhost:5000/api
 ```
 
-Ensure that you replace the `YOUR_AUTH0_DOMAIN` and `YOUR_AUTH0_AUDIENCE` placeholder with the appropriate credentials as obtained from your Auth0 dashboard.
+Ensure that you replace the `YOUR_AUTH0_DOMAIN` placeholder with the appropriate credentials as obtained from your Auth0 dashboard.
+AUTH0_AUDIENCE is the url of the backend server
 
 
 ### MongoDB
@@ -139,8 +140,8 @@ REACT_APP_AUTH0_REDIRECT_URI=http://localhost:3000
 REACT_APP_SERVER_BASE_URL=http://localhost:5000
 ```
 
-Replace `YOUR_AUTH0_CLIENT_ID`, `YOUR_AUTH0_DOMAIN` and `YOUR_AUTH0_AUDIENCE` placeholder with your Auth0 credentials.
-
+Replace `YOUR_AUTH0_CLIENT_ID`, `YOUR_AUTH0_DOMAIN` placeholder with your Auth0 credentials.
+AUTH0_AUDIENCE is the url of the backend server
 ### Test the application
 Finally open your browser and view the application on http://localhost:3000
 
