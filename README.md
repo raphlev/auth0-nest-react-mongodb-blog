@@ -14,7 +14,7 @@ Allowed Callback URLs
 Allowed Web Origins
 Allowed Logout URLs
 Use http://localhost:3000 as the value for each of the field because your React application is accessible on that URL during development. Feel free to use a different URL if your application is in production already. Next, you can now click on the SAVE CHANGES button. Copy the Domain, Client ID, and save it somewhere as you will need it in .env files :
-```
+```bash
 (server) YOUR_AUTH0_DOMAIN = (client) REACT_APP_AUTH0_DOMAIN = Domain
 (client) REACT_APP_AUTH0_CLIENT_ID = Client ID
 ```
@@ -25,12 +25,25 @@ In the first pârt Part-1 of the tutorial above, the Single Page Application cli
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
 ( Built with React ).
 
-Install TypeScript globally on your machine if you don't have it installed already:
+For the development, install TypeScript and nest globally on your machine if you don't have it installed already:
 
 ```bash
 npm install -g typescript
+npm install -g @nestjs/cli
 ```
 
+For run-time:
+
+Backend:
+```bash
+cd ./blog-backend
+npm install && npm run start:dev
+```
+Frontend:
+```bash
+cd ./blog-frontend
+yarn install && yarn start
+```
 ### Clone the repository
 To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `blog-backend` and `blog-frontend`)
 
