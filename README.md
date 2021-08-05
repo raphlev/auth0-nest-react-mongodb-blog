@@ -1,7 +1,16 @@
 # Build a blog using Nest.js, TypeScript, React and MongoDB
-
 Application repo for a simple blog application built with Nest.js, TypeScript, React and MongoDB.
-
+# Quick Start
+ackend:
+```bash
+cd ./blog-backend
+npm install && npm run start:dev
+```
+Frontend:
+```bash
+cd ./blog-frontend
+yarn install && yarn start
+```
 # How To
 https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescript-and-mongodb-part-1/
 https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescript-and-mongodb-part-2/
@@ -30,19 +39,6 @@ For the development, install TypeScript and nest globally on your machine if you
 ```bash
 npm install -g typescript
 npm install -g @nestjs/cli
-```
-
-For run-time:
-
-Backend:
-```bash
-cd ./blog-backend
-npm install && npm run start:dev
-```
-Frontend:
-```bash
-cd ./blog-frontend
-yarn install && yarn start
 ```
 ### Clone the repository
 To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `blog-backend` and `blog-frontend`)
