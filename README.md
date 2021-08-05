@@ -18,18 +18,19 @@ yarn install && yarn start
 https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescript-and-mongodb-part-1/
 https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescript-and-mongodb-part-2/
 
-# Authentication
+## Authentication
 Create auth0 end point Application: here we use what is described in the second part Part-2 of the tutorial above: set up a single page application on Auth0. Sign in to your Auth0 Dashboard and head over to the application section of your Auth0 management dashboard and click on CREATE APPLICATION. Enter a name (exemple modern-full-stack-nest.js-react-mongodb-auth0_end_point) for your application in the form that will be displayed. Next, choose Single Page Web Applications from the list of application type and then hit the CREATE button to complete this process. Once you are done, you will be redirected to a page where you can view the details of your application. Now, click on the Settings tab on that page and scroll down to locate the following fields:
 - Allowed Callback URLs
 - Allowed Web Origins
 - Allowed Logout URLs
+
 Use http://localhost:3000 as the value for each of the field because your React application is accessible on that URL during development. Feel free to use a different URL if your application is in production already. Next, you can now click on the SAVE CHANGES button. Copy the Domain, Client ID, and save it somewhere as you will need it in .env files :
 ```bash
 (server) YOUR_AUTH0_DOMAIN = (client) REACT_APP_AUTH0_DOMAIN = Domain
 (client) REACT_APP_AUTH0_CLIENT_ID = Client ID
 ```
 ## Note 
-In the first pârt Part-1 of the tutorial above, the Single Page Application client react app was not implemented, instead of creating SPA application end point in auth0, only an API end point was created in order to be tested with client http tool (postman). This part is not needed here for this entire application since we are using SPA to call auth0 end point API.
+In the first part Part-1 of the tutorial above, the Single Page Application client react app was not implemented, instead of creating SPA application end point in auth0, only an API end point was created in order to be tested with client http tool (postman). This part is not needed here for this entire application since we are using SPA to call auth0 end point API.
 
 ## Getting Started
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
@@ -41,18 +42,6 @@ For the development, install TypeScript and nest globally on your machine if you
 npm install -g typescript
 npm install -g @nestjs/cli
 ```
-### Clone the repository
-To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `blog-backend` and `blog-frontend`)
-
-```bash
-git clone https://github.com/yemiwebby/nest-react-project.git
-```
-
-## Change directory into the newly cloned project
-```bash
-cd nest-react-project
-```
-
 ## Backend
 ### Change directory into the backend
 ```bash
@@ -103,20 +92,19 @@ npm run start:dev
 
 This will start the backend application on port `5000`. This was modified to avoid confliction with the frontend application which by default will run on port `3000`
 
-
 ## Frontend
 Open another terminal from the `nest-react-project` and navigate to the `blog-frontend` folder to setup the frontend
 
 ### Frontend dependencies
 ```bash
 cd blog-frontend
-npm install
+yarn install
 ```
 
 ### Run the frontend app
 
 ```bash
-npm start
+yarn start
 ```
 
 ### Create .env file and include Auth0 App credentials
