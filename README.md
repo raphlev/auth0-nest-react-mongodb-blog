@@ -69,7 +69,7 @@ npm install
 ```
 
 ### Create .env file
-Once the installation process is complete, create a `.env` file:
+Once the installation process is complete, create a `.env` file in ./blog-backend:
 
 ```bash
 touch .env
@@ -79,7 +79,7 @@ Open the newly created file and add the following code:
 
 ```
 AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
-AUTH0_AUDIENCE=YOUR_AUTH0_AUDIENCE
+AUTH0_AUDIENCE=http://localhost:5000/api
 ```
 
 Ensure that you replace the `YOUR_AUTH0_DOMAIN` and `YOUR_AUTH0_AUDIENCE` placeholder with the appropriate credentials as obtained from your Auth0 dashboard.
@@ -123,7 +123,7 @@ npm start
 
 ### Create .env file and include Auth0 App credentials
 
-Create a `.env` file as shown here:
+Create a `.env` file in ./blog-frontend as shown here:
 
 ```
 touch .env
@@ -134,9 +134,9 @@ Open the file and paste the following code in it:
 ```
 REACT_APP_AUTH0_CLIENT_ID=YOUR_AUTH0_CLIENT_ID
 REACT_APP_AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
-REACT_APP_AUTH0_AUDIENCE=YOUR_AUTH0_AUDIENCE
+REACT_APP_AUTH0_AUDIENCE=http://localhost:5000/api
 REACT_APP_AUTH0_REDIRECT_URI=http://localhost:3000
-REACT_APP_BASEURL=http://localhost:3000
+REACT_APP_SERVER_BASE_URL=http://localhost:5000
 ```
 
 Replace `YOUR_AUTH0_CLIENT_ID`, `YOUR_AUTH0_DOMAIN` and `YOUR_AUTH0_AUDIENCE` placeholder with your Auth0 credentials.
