@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 
 function Post() {
 
-  let { postId } = useParams();
+  let { postId } = useParams<{ postId: string }>();
 
   const [post, setPost] = useState<any>({});
 

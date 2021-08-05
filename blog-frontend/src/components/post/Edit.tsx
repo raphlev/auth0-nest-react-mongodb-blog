@@ -8,13 +8,13 @@ function Edit(): JSX.Element {
   const { getIdTokenClaims } = useAuth0();
 
   let history = useHistory();
-  let { postId } = useParams();
+  let { postId } = useParams<{ postId: string }>();
 
   interface IValues {
     [key: string]: any;
   }
 
-  const [post, setPost] = useState()
+  const [post, setPost] = useState<any>({});
   const [values, setValues] = useState<IValues>([]);
   const [submitSuccess, setSubmitSuccess] = useState<boolean>(false)
   const [loading, setLoading] = useState(false);

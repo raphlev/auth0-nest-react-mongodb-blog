@@ -7,7 +7,7 @@ function Home():JSX.Element {
   let history = useHistory()
   const { isAuthenticated, getIdTokenClaims, user } = useAuth0();
 
-  const [posts, setPosts] = useState();
+  const [posts, setPosts] = useState([]);
 
   const deletePost = async(id: string) => {
     const accessToken = await getIdTokenClaims();

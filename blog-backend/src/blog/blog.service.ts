@@ -18,7 +18,7 @@ export class BlogService {
     return post;
   }
   async addPost(createPostDTO: CreatePostDTO): Promise<Post> {
-    const newPost = await this.postModel(createPostDTO);
+    const newPost = await new this.postModel(createPostDTO);
     return newPost.save();
   }
   async editPost(postID, createPostDTO: CreatePostDTO): Promise<Post> {
