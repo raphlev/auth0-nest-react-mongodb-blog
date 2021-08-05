@@ -36,7 +36,7 @@ In the first part Part-1 of the tutorial above, the Single Page Application clie
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
 ( Built with React ).
 
-For the development, install TypeScript and nest globally on your machine if you don't have it installed already:
+For the development, install typescript and nestjs/cli globally on your machine if you don't have it installed already:
 
 ```bash
 npm install -g typescript
