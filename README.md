@@ -1,12 +1,15 @@
 # Build a blog using Nest.js, TypeScript, React and MongoDB
 Application repo for a simple blog application built with Nest.js, TypeScript, React and MongoDB.
+
+This project is a single Page Application written in react for the front-end and nest for the backend with typescript and mongodb atlas database.
+For the Authentication SaaS auth0.com end point is used (need Free Plan account allowing 7000 users).
 # Quick Start
-ackend:
+## Backend
 ```bash
 cd ./blog-backend
 npm install && npm run start:dev
 ```
-Frontend:
+## Frontend
 ```bash
 cd ./blog-frontend
 yarn install && yarn start
@@ -16,12 +19,10 @@ https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescrip
 https://auth0.com/blog/modern-full-stack-development-with-nestjs-react-typescript-and-mongodb-part-2/
 
 # Authentication
-This project is a single Page Application written in react for the front-end and nest for the backend with typescript and mongodb atlas database.
-For the Authentication we use SaaS auth0.com end point.
-- Create auth0 end point Application: here we use what is described in the second part Part-2 of the tutorial above: set up a single page application on Auth0. Sign in to your Auth0 Dashboard and head over to the application section of your Auth0 management dashboard and click on CREATE APPLICATION. Enter a name (exemple modern-full-stack-nest.js-react-mongodb-auth0_end_point) for your application in the form that will be displayed. Next, choose Single Page Web Applications from the list of application type and then hit the CREATE button to complete this process. Once you are done, you will be redirected to a page where you can view the details of your application. Now, click on the Settings tab on that page and scroll down to locate the following fields:
-Allowed Callback URLs
-Allowed Web Origins
-Allowed Logout URLs
+Create auth0 end point Application: here we use what is described in the second part Part-2 of the tutorial above: set up a single page application on Auth0. Sign in to your Auth0 Dashboard and head over to the application section of your Auth0 management dashboard and click on CREATE APPLICATION. Enter a name (exemple modern-full-stack-nest.js-react-mongodb-auth0_end_point) for your application in the form that will be displayed. Next, choose Single Page Web Applications from the list of application type and then hit the CREATE button to complete this process. Once you are done, you will be redirected to a page where you can view the details of your application. Now, click on the Settings tab on that page and scroll down to locate the following fields:
+- Allowed Callback URLs
+- Allowed Web Origins
+- Allowed Logout URLs
 Use http://localhost:3000 as the value for each of the field because your React application is accessible on that URL during development. Feel free to use a different URL if your application is in production already. Next, you can now click on the SAVE CHANGES button. Copy the Domain, Client ID, and save it somewhere as you will need it in .env files :
 ```bash
 (server) YOUR_AUTH0_DOMAIN = (client) REACT_APP_AUTH0_DOMAIN = Domain
