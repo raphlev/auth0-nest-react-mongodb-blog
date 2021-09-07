@@ -125,7 +125,7 @@ REACT_APP_AUTH0_REDIRECT_URI=http://localhost:3000
 REACT_APP_SERVER_BASE_URL=http://localhost:5000
 ```
 
-Replace `YOUR_AUTH0_CLIENT_ID`, `YOUR_AUTH0_DOMAIN` placeholder with your Auth0 credentials.
+Replace  `YOUR_AUTH0_CLIENT_ID`, `YOUR_AUTH0_DOMAIN` placeholder with your Auth0 credentials.
 AUTH0_AUDIENCE is the url of the backend server
 ### Test the application
 Finally open your browser and view the application on http://localhost:3000
